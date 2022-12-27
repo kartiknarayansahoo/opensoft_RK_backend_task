@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "hostel",
     "phonenumber_field",
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

@@ -18,7 +18,7 @@ class Room(models.Model):
 
 
 class Student(models.Model):
-    name = models.CharField(max_length=200, null=True)
+    student_name = models.CharField(max_length=200, null=True)
     roll_no = models.CharField(max_length=10, primary_key=True, unique=True)
     contact_number = PhoneNumberField(null=False, blank=False, unique=True)
     room = models.ForeignKey(Room, on_delete=models.CASCADE, null=True)
